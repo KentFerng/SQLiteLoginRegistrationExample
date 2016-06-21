@@ -27,6 +27,7 @@ public class Welcome extends AppCompatActivity {
         while(c.moveToNext()) {
             buffer.append(""+c.getString(0)+"\n");
         }
+        text.setText("");
         text.setText(buffer);
         Toast.makeText(Welcome.this, "Welcome "+buffer, Toast.LENGTH_LONG).show();
 

@@ -21,4 +21,5 @@
         completions."
     </string>
     <string name="Ok">OK</string>
+    <string name="error_does_not_exits">User does not exits</string>
 </resources>

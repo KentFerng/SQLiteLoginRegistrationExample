@@ -100,7 +100,11 @@ public class ActivityLogin extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        //CREATE DATABASE OR OPEN DATABASE IF EXISTS
         db=openOrCreateDatabase("RegistrationDB", Context.MODE_PRIVATE, null);
+
+        //CREATE TABLE OR ACCESS TABLE IF EXISTS
+        db.execSQL("CREATE TABLE IF NOT EXISTS register(fname VARCHAR, lname VARCHAR, email VARCHAR, password VARCHAR, contact VARCHAR);");
 
     }
 
